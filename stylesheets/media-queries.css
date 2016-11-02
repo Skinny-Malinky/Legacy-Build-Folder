@@ -4,65 +4,55 @@
     width: 460px;
   }
 
-  /* line 5, ../sass/media-queries.scss */
+  /* line 6, ../sass/media-queries.scss */
   #intro {
     margin-top: 30%;
     width: 600px;
   }
-  /* line 8, ../sass/media-queries.scss */
+  /* line 10, ../sass/media-queries.scss */
   #intro p {
     font-size: 1em;
   }
-  /* line 11, ../sass/media-queries.scss */
+  /* line 14, ../sass/media-queries.scss */
   #intro h1 {
     font-size: 3em;
   }
-  /* line 14, ../sass/media-queries.scss */
+  /* line 18, ../sass/media-queries.scss */
   #intro button {
     height: 35px;
     font-size: 0.7em;
   }
 }
 @media only screen and (max-width: 641px) {
-  /* line 22, ../sass/media-queries.scss */
+  /* line 26, ../sass/media-queries.scss */
   html {
     background: url("../images/bglong.jpg") no-repeat center center fixed;
   }
 
-  /* line 25, ../sass/media-queries.scss */
+  /* line 30, ../sass/media-queries.scss */
+  .contact {
+    width: 130px;
+  }
+
+  /* line 34, ../sass/media-queries.scss */
   #intro {
     width: 400px;
   }
+
+  /* line 38, ../sass/media-queries.scss */
+  .content {
+    width: 200px;
+  }
 }
 @media only screen and (max-width: 460px) {
-  /* line 31, ../sass/media-queries.scss */
+  /* line 44, ../sass/media-queries.scss */
   #intro {
     width: 300px;
   }
-
-  /* line 35, ../sass/media-queries.scss */
-  .contact .icon {
-    margin: 5px;
-  }
-
-  /* line 39, ../sass/media-queries.scss */
-  .content {
-    width: 230px;
-  }
 }
 @media only screen and (max-width: 300px) {
-  /* line 45, ../sass/media-queries.scss */
+  /* line 50, ../sass/media-queries.scss */
   #intro {
-    width: 200px;
-  }
-
-  /* line 49, ../sass/media-queries.scss */
-  .contact .icon {
-    margin: 0px;
-  }
-
-  /* line 53, ../sass/media-queries.scss */
-  .content {
     width: 200px;
   }
 }

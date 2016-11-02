@@ -1,12 +1,13 @@
-$primary:#ff8923;
-$secondary:#ffb100;
-@mixin cover() {
+$primary: #ff8923;
+$secondary: #ffb100;
+
+@mixin cover {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height:100%;
-    width:100%;
+    min-height: 100%;
+    width: 100%;
     filter: "progid: DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')";
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
@@ -26,10 +27,11 @@ $secondary:#ffb100;
 }
 
 html {
-    background: url('../images/bg.jpg') no-repeat center center fixed;
-    display:block;
+    background: url("../images/bg.jpg") no-repeat center center fixed;
+    display: block;
     min-height: 100%;
-    @include cover();
+
+    @include cover;
 }
 
 a {
@@ -50,7 +52,7 @@ hr {
 }
 
 h1 {
-    font: 5em'sanchez';
+    font: 5em "sanchez";
     margin: 0px;
     padding: 0px;
 }
@@ -75,6 +77,7 @@ footer {
     margin-bottom: 35px;
     margin-top: 10px;
     display: block;
+
     p {
         font-style: italic;
         font-size: 1em;
@@ -88,18 +91,22 @@ footer {
 }
 
 .contact {
-    max-width: 450px;
-    width: auto;
+    width: 300px;
     margin-right: auto;
     margin-left: auto;
+
     .icon {
         @include circleimg(100px);
+
         float: left;
         margin: 20px;
-        @include shadow();
+
+        @include shadow;
+
         background-color: white;
         border-width: thick;
         border-style: dotted;
+
         &:hover {
             background-color: darken(white, 15%);
             transition: .2s ease;
@@ -110,6 +117,7 @@ footer {
 #twitter {
     //background-color: rgb(94, 169, 221);
     border-color: rgb(94, 169, 221);
+
     img {
         margin-top: 26px;
         margin-left: 22px;
@@ -118,6 +126,7 @@ footer {
 
 #gmail {
     border-color: rgb(213, 77, 64);
+
     img {
         margin: 20px;
     }
@@ -125,6 +134,7 @@ footer {
 
 #wordpress {
     border-color: rgb(70, 70, 70);
+
     img {
         margin: 15px;
     }
@@ -149,12 +159,14 @@ footer {
     margin-right: auto;
     margin-top: 15%;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+
     h1 {
         color: #fff;
         text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
     }
+
     p {
-        font-size: 1.5em
+        font-size: 1.5em;
     }
 }
 
@@ -165,6 +177,7 @@ footer {
 .back {
     margin: 50px;
     position: fixed;
+
     button {
         font-weight: 100;
         font-size: 1em;
@@ -173,7 +186,8 @@ footer {
         border-color: white;
         width: 75px;
         height: 75px;
-        @include shadow();
+
+        @include shadow;
     }
 }
 
@@ -184,6 +198,7 @@ footer {
         margin-top: 10px;
         font: 1.1em;
     }
+
     a {
         margin: 0px;
         text-align: center;
@@ -194,28 +209,34 @@ footer {
 .content {
     width: 920px;
     height: auto;
+
     //it's normally 10px
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+
     h3 {
         font-family: 'sanchez';
         font-size: 2em;
         margin-bottom: 0px;
     }
+
     p {
         font-family: 'Roboto Slab', 'Courier';
     }
+
     #discuss {
         p, h3 {
             margin: 10px;
             padding: 10px;
         }
-        margin:auto;
-        width:600px;
-        height:auto;
-        background:white;
-        @include shadow();
+
+        margin: auto;
+        width: 600px;
+        height: auto;
+        background: white;
+
+        @include shadow;
     }
 }
 
@@ -226,16 +247,20 @@ footer {
     width: 200px;
     float: left;
     margin: 15px;
-    @include shadow();
+
+    @include shadow;
+
     p {
         font-weight: 100;
         margin-top: 0px;
         margin-bottom: 2px;
     }
+
     img {
         height: auto;
         width: 200px;
     }
+
     h1 {
         font-family: 'Sanchez';
         font-weight: 401;
@@ -245,6 +270,7 @@ footer {
         margin-bottom: 5px;
         color: #2f2f2f;
     }
+
     .extract {
         margin: 15px;
         margin-top: 6px;
@@ -284,9 +310,12 @@ footer {
     background-color: $primary;
     color: white;
     transition: .2s ease;
-    @include shadow();
+
+    @include shadow;
+
     &:hover {
         background-color: darken($primary, 10%);
+
         //color: $primary;
         //border: 1px solid $primary;
         transition: .2s ease;
@@ -301,6 +330,7 @@ footer {
     color: $primary;
     border: 1px solid $primary;
     transition: .2s ease;
+
     &:hover {
         background-color: $primary;
         color: white;
@@ -312,8 +342,10 @@ footer {
     background-color: $secondary;
     color: $primary;
     transition: .2s ease;
+
     &:hover {
         background-color: darken($secondary, 10%);
+
         //color: white;
         transition: .2s ease;
     }
@@ -322,6 +354,7 @@ footer {
 .disabled {
     color: darken($secondary, 20%);
     background-color: darken($secondary, 5%);
+
     &:hover {
         cursor: initial;
     }
@@ -339,11 +372,13 @@ footer {
     margin-top: 20px;
     margin-bottom: 30px;
     padding-bottom: 0px;
+
     p {
         margin: 30px;
         margin-top: 10px;
         margin-bottom: 15px;
     }
+
     h3 {
         margin-left: 30px;
         margin-top: 20px;
@@ -352,12 +387,14 @@ footer {
 
 .middle {
     width: 100%;
+
     img {
         margin-left: auto;
         margin-right: auto;
         display: block;
         margin-top: 30px;
     }
+
     object {
         margin-left: auto;
         margin-right: auto;
@@ -367,12 +404,14 @@ footer {
 
 #composite {
     padding-bottom: 0px;
+
     img {
         vertical-align: middle;
         float: left;
         margin: 20px;
         max-height: 500px;
     }
+
     iframe {
         margin-bottom: 20px;
     }
@@ -393,7 +432,7 @@ footer {
     position: fixed;
     background: #0b0b0b;
     opacity: 0.8;
-    filter: alpha(opacity=80);
+    filter: alpha(opacity = 80);
 }
 
 .mfp-wrap {
@@ -694,6 +733,7 @@ button::-moz-focus-inner {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
     background: black;
 }
+
 /* Main image in popup */
 
 img.mfp-img {
@@ -708,6 +748,7 @@ img.mfp-img {
     padding: 40px 0 40px;
     margin: 0 auto;
 }
+
 /* The shadow behind the image */
 
 .mfp-figure {
@@ -761,8 +802,7 @@ img.mfp-img {
     cursor: pointer;
 }
 
-@media screen and (max-width: 800px) and (orientation: landscape),
-screen and (max-height: 300px) {
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
     /**
        * Remove all paddings around the image on small screen
        */
@@ -771,20 +811,25 @@ screen and (max-height: 300px) {
         padding-left: 0;
         padding-right: 0;
     }
+
     .mfp-img-mobile img.mfp-img {
         padding: 0;
     }
+
     .mfp-img-mobile .mfp-figure {
         /* The shadow behind the image */
     }
+
     .mfp-img-mobile .mfp-figure:after {
         top: 0;
         bottom: 0;
     }
+
     .mfp-img-mobile .mfp-figure small {
         display: inline;
         margin-left: 5px;
     }
+
     .mfp-img-mobile .mfp-bottom-bar {
         background: rgba(0, 0, 0, 0.6);
         bottom: 0;
@@ -796,13 +841,16 @@ screen and (max-height: 300px) {
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
+
     .mfp-img-mobile .mfp-bottom-bar:empty {
         padding: 0;
     }
+
     .mfp-img-mobile .mfp-counter {
         right: 5px;
         top: 3px;
     }
+
     .mfp-img-mobile .mfp-close {
         top: 0;
         right: 0;
@@ -821,14 +869,17 @@ screen and (max-height: 300px) {
         -webkit-transform: scale(0.75);
         transform: scale(0.75);
     }
+
     .mfp-arrow-left {
         -webkit-transform-origin: 0;
         transform-origin: 0;
     }
+
     .mfp-arrow-right {
         -webkit-transform-origin: 100%;
         transform-origin: 100%;
     }
+
     .mfp-container {
         padding-left: 6px;
         padding-right: 6px;
@@ -860,6 +911,7 @@ screen and (max-height: 300px) {
     right: 0;
     padding-top: 0;
 }
+
 /* overlay at start */
 
 .mfp-fade.mfp-bg {
@@ -868,16 +920,19 @@ screen and (max-height: 300px) {
     -moz-transition: all 0.15s ease-out;
     transition: all 0.15s ease-out;
 }
+
 /* overlay animate in */
 
 .mfp-fade.mfp-bg.mfp-ready {
     opacity: 0.8;
 }
+
 /* overlay animate out */
 
 .mfp-fade.mfp-bg.mfp-removing {
     opacity: 0;
 }
+
 /* content at start */
 
 .mfp-fade.mfp-wrap .mfp-content {
@@ -886,16 +941,19 @@ screen and (max-height: 300px) {
     -moz-transition: all 0.15s ease-out;
     transition: all 0.15s ease-out;
 }
+
 /* content animate it */
 
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
     opacity: 1;
 }
+
 /* content animate out */
 
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
     opacity: 0;
 }
+
 /*
 ::-webkit-scrollbar-button {
     height: 0;

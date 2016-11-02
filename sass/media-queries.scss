@@ -2,15 +2,19 @@
     .content {
         width: 460px;
     }
+
     #intro {
         margin-top: 30%;
         width: 600px;
+
         p {
             font-size: 1em;
         }
+
         h1 {
             font-size: 3em;
         }
+
         button {
             height: 35px;
             font-size: 0.7em;
@@ -20,10 +24,19 @@
 
 @media only screen and (max-width: 641px) {
     html {
-        background: url('../images/bglong.jpg') no-repeat center center fixed;
+        background: url("../images/bglong.jpg") no-repeat center center fixed;
     }
+
+    .contact {
+        width: 130px;
+    }
+
     #intro {
         width: 400px;
+    }
+
+    .content {
+        width: 200px;
     }
 }
 
@@ -31,26 +44,10 @@
     #intro {
         width: 300px;
     }
-    .contact {
-        .icon {
-            margin: 5px;
-        }
-    }
-    .content {
-        width: 230px;
-    }
 }
 
 @media only screen and (max-width: 300px) {
     #intro {
-        width: 200px;
-    }
-    .contact {
-        .icon {
-            margin: 0px;
-        }
-    }
-    .content {
         width: 200px;
     }
 }
