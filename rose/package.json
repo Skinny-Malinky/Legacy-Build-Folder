@@ -1,11 +1,11 @@
 {
-  "name": "new-site",
+  "name": "Rose",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:serve-dev": "live-server dev",
-    "dev:sass-dev": "node-sass --watch dev/scss node-sass --output-style expanded --source-map true dev/scss/style.scss --output dev/css",
+    "dev:serve-dev": "live-server",
+    "dev:sass-dev": "node-sass --watch scss node-sass --output-style expanded --source-map true scss/style.scss --output css",
     "prod": "mkdirp prod/js",
     "start": "npm-run-all --parallel dev:*"
   },
