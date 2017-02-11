@@ -1,0 +1,20 @@
+{
+  "name": "new-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:serve-dev": "live-server dev",
+    "dev:sass-dev": "node-sass --watch dev/scss node-sass --output-style expanded --source-map true dev/scss/style.scss --output dev/css",
+    "prod": "mkdirp prod/js",
+    "start": "npm-run-all --parallel dev:*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.3.0",
+    "npm-run-all": "^4.0.0"
+  }
+}

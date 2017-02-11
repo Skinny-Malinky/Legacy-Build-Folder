@@ -1,0 +1,67 @@
+<!--
+For smooth scrolling links do this ->
+<a smooth-scroll href = "#link">
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Struan Fraser</title>
+</head>
+
+<body>
+  <div class="header-container">
+    <h1>Hello, Big Job Jobs 😎</h1>
+    </a>
+  </div>
+  <div class="strap-line">
+    <p> Hello, I'm Struan. I'm an interaction designer that specialises in prototyping, interface animation and design processes </p>
+  </div>
+  <!-- <div class="fukol-grid"> -->
+  <div class="project-container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quasi libero ducimus illum, quas quae veniam, asperiores eos voluptatem beatae ipsam vitae totam esse dolorum placeat. Obcaecati fuga totam voluptatibus!</p>
+    <div class="tile">
+    </div>
+  </div>
+  <div class="project-container">
+    <div class="tile"></div>
+  </div>
+  <div class="project-container">
+    <div class="tile">
+    </div>
+  </div>
+  <div class="project-container">
+    <div class="tile"></div>
+  </div>
+  <div class="project-container">
+    <div class="tile"></div>
+  </div>
+  <div class="project-container">
+    <div class="tile"></div>
+  </div>
+  <div class="project-container">
+    <p>Friendo, fuckin' friendo boy.</p>
+  </div>
+  <!-- </div> -->
+</body>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://use.typekit.net/kyq0xmz.js"></script>
+<script src="js/smooth-scroll.js"></script>
+<script>
+try {
+  Typekit.load({
+    async: true
+  });
+} catch (e) {}
+smoothScroll.init({
+  selector: '[smooth-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+  selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+  speed: 500, // Integer. How fast to complete the scroll in milliseconds
+  easing: 'easeInOutCubic', // Easing pattern to use
+  offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+  callback: function(anchor, toggle) {} // Function to run after scrolling
+});
+</script>
+
+</html>
