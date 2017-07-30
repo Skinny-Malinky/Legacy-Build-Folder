@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair-Display|Lobster");
+body {
+  background: #30e8bf;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #30e8bf, #ff8235);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #30e8bf, #ff8235);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%; }
+  body * + * {
+    margin: 2em; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'adobe-garamond-pro', serif;
+  color: #2D2D2D; }
+
+h1 {
+  font-size: 4.6em;
+  font-weight: 400;
+  font-style: normal; }
+
+a {
+  text-decoration: none; }
+
+p {
+  font-family: 'adobe-garamond-pro', serif;
+  color: #281C15;
+  line-height: 2.2em;
+  margin-left: 0px;
+  margin-top: 2em;
+  font-size: 2em; }
+
+.facade {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative; }
+
+.middle-circle {
+  border-radius: 200px/150px;
+  width: 400px;
+  height: 300px;
+  background-color: #333;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -160px; }
+
+.project-container {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 20em;
+  padding: 5em;
+  margin: 0; }
+  .project-container:nth-child(odd) {
+    background-color: #333; }
+    .project-container:nth-child(odd) .tile {
+      background-color: #0C0A13;
+      border: 1em dashed #333; }
+  .project-container p {
+    margin-left: 12em;
+    font-family: 'Open Sans';
+    color: #e6e4da;
+    width: auto; }
