@@ -1,5 +1,9 @@
 # Dev-tools
 rose/node_modules/*
+node_modules/*
+
+# Struan ignores
+robots.txt
 
 # Windows image file caches
 Thumbs.db
