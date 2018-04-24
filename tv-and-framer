@@ -136,7 +136,7 @@ eventHandler = Utils.throttle 0.3, (keyCode) -&gt;
     <aside>
         <ol>
                 <li>
-                    <a href="/tv-and-framer">TV & Framer</a>
+                    <a href="tv-and-framer">TV & Framer</a>
                         <span>
                             Apr 22
                         </span>
@@ -150,7 +150,7 @@ eventHandler = Utils.throttle 0.3, (keyCode) -&gt;
         <h2>By Year</h2>
         <ol>
                 <li>
-                    <a href="/2018.html">2018 (1)</a>
+                    <a href="2018.html">2018 (1)</a>
                 </li>
         </ol>
     </aside>
