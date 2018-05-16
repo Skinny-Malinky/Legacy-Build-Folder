@@ -11,14 +11,14 @@
   </author>
   <entry>
     <title>TV &amp; Framer</title>
-    <link rel="alternate" href="http://blog.url.com/tv-and-framer/"/>
-    <id>http://blog.url.com/tv-and-framer/</id>
+    <link rel="alternate" href="http://blog.url.com/tv-and-framer"/>
+    <id>http://blog.url.com/tv-and-framer</id>
     <published>2018-04-22T00:00:00+01:00</published>
-    <updated>2018-04-24T17:19:52+01:00</updated>
+    <updated>2018-05-16T21:43:10+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img src="../posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves."&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src="http://struanfraser.co.uk/posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves."&gt;&lt;/p&gt;
 
 &lt;h2&gt;Prototyping for TV&lt;/h2&gt;
 
@@ -29,7 +29,7 @@
 &lt;p&gt;It feels like we&amp;rsquo;ve tried every prototyping tool under the sun &lt;em&gt;(R.I.P. Pixate ⚰️)&lt;/em&gt;. Using Axure we&amp;rsquo;d tied ourselves into the deepest, most convoluted conditional logic  that it was no longer feasible to return to a project. &lt;/p&gt;
 
 &lt;p&gt;A screenshot of one of my colleague&amp;rsquo;s more complicated prototypes –
-&lt;img src="../posts/2018/images/axure-chaos.png" alt="Screenshot of Axure with hundreds of conditional statements in the right hand panel." class="no-shadow" loop="true" style="margin-bottom:0;"&gt;
+&lt;img src="http://struanfraser.co.uk/posts/2018/images/axure-chaos.png" alt="Screenshot of Axure with hundreds of conditional statements in the right hand panel." class="no-shadow" loop="true" style="margin-bottom:0;"&gt;
 &lt;span class="caption" style="margin-top: -0.2em;"&gt;Axure&amp;rsquo;s conditional chaos. And that&amp;rsquo;s a fraction of it.&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;Axure was good in that it was one of the few prototyping tools that allowed for keyboard input. We&amp;rsquo;d discovered that you could buy a cheap infrared receiver called a &lt;a href="http://www.flirc.tv"&gt;FLIRC&lt;/a&gt; and that it could be used to convert infrared input into keyboard input. Perfect.&lt;/p&gt;
@@ -48,7 +48,7 @@
 
 &lt;p&gt;We&amp;rsquo;d stumbled upon &lt;a href="http://examples.framerjs.com/#event-keyboard-shortcuts.framer"&gt;this nifty little example&lt;/a&gt; which seemed to perfectly meet our needs. Unfortunately the syntax looked pretty dense compared to the mobile prototypes and it became fairly clear that Framer wasn&amp;rsquo;t designed for TV but we persevered. &lt;/p&gt;
 
-&lt;video src="../posts/2018/video/flirc.mp4" alt="Struan uses an infrared remote control to interact with a Framer prototype of YouView's TV Guide" controls="true" class="full-width" loop="true"&gt;&lt;/video&gt;
+&lt;video src="http://struanfraser.co.uk/posts/2018/video/flirc.mp4" alt="Struan uses an infrared remote control to interact with a Framer prototype of YouView's TV Guide" controls="true" class="full-width" loop="true"&gt;&lt;/video&gt;
 
 &lt;p&gt;&lt;span class="caption"&gt;Using FLIRC with a YouView TV Guide prototype&lt;/span&gt;&lt;/p&gt;
 
@@ -84,7 +84,7 @@ eventHandler = Utils.throttle 0.3, (keyCode) -&amp;gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;I&amp;rsquo;ve written a more comprehensive guide on how to use the module on Github so if the module sounds like something you&amp;rsquo;d be interested in, take a look –&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="https://github.com/Skinny-Malinky/Keyboard-Input-for-Framer"&gt;&lt;img src="../posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves."&gt;
+&lt;p&gt;&lt;a href="https://github.com/Skinny-Malinky/Keyboard-Input-for-Framer"&gt;&lt;img src="http://struanfraser.co.uk/posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves."&gt;
 &lt;span class = "caption"&gt;Get the Module&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
