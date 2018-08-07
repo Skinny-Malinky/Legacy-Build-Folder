@@ -18,7 +18,7 @@
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;video src="http://struanfraser.co.uk/posts/2018/video/trying-libraries/torus.mp4" alt="" controls="true" class="full-width" autoplay="false" loop="true"&gt;&lt;/video&gt;
+    <content type="html">&lt;video src="https://struanfraser.co.uk/posts/2018/video/trying-libraries/torus.mp4" alt="" controls="true" class="full-width" autoplay="false" loop="true"&gt;&lt;/video&gt;
 
 &lt;p&gt;&lt;span class="caption"&gt;My First Attempt at THREEJS&lt;/span&gt;&lt;/p&gt;
 
@@ -28,7 +28,7 @@
 
 &lt;h2&gt; P5.JS&lt;/h2&gt;
 
-&lt;video src="http://struanfraser.co.uk/posts/2018/video/trying-libraries/do-it-now.mp4" alt="" controls="true" class="full-width"&gt;&lt;/video&gt;
+&lt;video src="https://struanfraser.co.uk/posts/2018/video/trying-libraries/do-it-now.mp4" alt="" controls="true" class="full-width"&gt;&lt;/video&gt;
 
 &lt;p&gt;&lt;span class="caption"&gt;Made with p5.js&lt;/span&gt;&lt;/p&gt;
 
@@ -38,16 +38,16 @@
 
 &lt;p&gt;After giving a friend a little support for their final year project, they offered to let me try out a processing sketch on the fountains at Central Saint Martins –&lt;/p&gt;
 
-&lt;video src="http://struanfraser.co.uk/posts/2018/video/trying-libraries/fountain-sketch.mp4" alt="" controls="true"&gt;&lt;/video&gt;
+&lt;video src="https://struanfraser.co.uk/posts/2018/video/trying-libraries/fountain-sketch.mp4" alt="" controls="true"&gt;&lt;/video&gt;
 
-&lt;p&gt;&lt;span class="caption"&gt;You can see a live demo of the &lt;a href="http://struanfraser.co.uk/fountain-sketch"&gt;Fountain Sketch here&lt;/a&gt;. Made with p5.js.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="caption"&gt;You can see a live demo of the &lt;a href="https://struanfraser.co.uk/fountain-sketch"&gt;Fountain Sketch here&lt;/a&gt;. Made with p5.js.&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;The left hand side shows the height of the wave: the whiter it is, the higher the wave. The right hand side shows the colour projected through the jet. Unfortunately we ran out of time on the day but I did get this photo of a trial run &lt;i&gt;almost&lt;/i&gt; working correctly – 
-&lt;img src="http://struanfraser.co.uk/posts/2018/images/trying-libraries/fountain.jpg" alt=""&gt;&lt;span class="caption"&gt;A Processing Sketch in a Fountain&lt;/span&gt;&lt;/p&gt;
+&lt;img src="https://struanfraser.co.uk/posts/2018/images/trying-libraries/fountain.jpg" alt=""&gt;&lt;span class="caption"&gt;A Processing Sketch in a Fountain&lt;/span&gt;&lt;/p&gt;
 
 &lt;h3&gt; P5 with 3D&lt;/h3&gt;
 
-&lt;video src="http://struanfraser.co.uk/posts/2018/video/trying-libraries/spinny-ball.mp4" alt="" controls="true" class="full-width"&gt;&lt;/video&gt;
+&lt;video src="https://struanfraser.co.uk/posts/2018/video/trying-libraries/spinny-ball.mp4" alt="" controls="true" class="full-width"&gt;&lt;/video&gt;
 
 &lt;p&gt;&lt;span class="caption"&gt;First foray into 3D using p5.js&lt;/span&gt;&lt;/p&gt;
 
@@ -57,15 +57,15 @@
 
 &lt;p&gt;Over the past couple of years, I think I&amp;rsquo;ve finally learned how to wield Twitter effectively and it&amp;rsquo;s introduced me to swathes of new artists&amp;rsquo; and coders&amp;rsquo; work. I found a video of Zach Lieberman talking at the AIGA design conference last year and I found the ease with which he was able to create shapes in code and talk about his journey with creative code inspiring. Seeing that talk made me want to try out Open Frameworks. The following is a result of that exploration –&lt;/p&gt;
 
-&lt;video src="http://struanfraser.co.uk/posts/2018/video/trying-libraries/square-grid-swoop-lieberman.mp4" alt="" controls="true" class="full-width"&gt;&lt;/video&gt;
+&lt;video src="https://struanfraser.co.uk/posts/2018/video/trying-libraries/square-grid-swoop-lieberman.mp4" alt="" controls="true" class="full-width"&gt;&lt;/video&gt;
 
 &lt;p&gt;&lt;span class="caption"&gt;An Open Processing Sketch – inspired by/stolen from – Zach Lieberman&amp;rsquo;s AIGA talk.&lt;/span&gt;&lt;/p&gt;
 
-&lt;video src="http://struanfraser.co.uk/posts/2018/video/trying-libraries/lines-and-swoop.mp4" alt="" controls="true" class="full-width"&gt;&lt;/video&gt;
+&lt;video src="https://struanfraser.co.uk/posts/2018/video/trying-libraries/lines-and-swoop.mp4" alt="" controls="true" class="full-width"&gt;&lt;/video&gt;
 
 &lt;p&gt;&lt;span class="caption"&gt;A progression of that initial idea.&lt;/span&gt;&lt;/p&gt;
 
-&lt;video src="http://struanfraser.co.uk/posts/2018/video/trying-libraries/wacky-lines.mp4" alt="" controls="true" class="full-width"&gt;&lt;/video&gt;
+&lt;video src="https://struanfraser.co.uk/posts/2018/video/trying-libraries/wacky-lines.mp4" alt="" controls="true" class="full-width"&gt;&lt;/video&gt;
 
 &lt;p&gt;&lt;span class="caption"&gt;Learning about the importance of using time as this is HECTIC.&lt;/span&gt;&lt;/p&gt;
 
@@ -73,7 +73,7 @@
 
 &lt;p&gt;Colour is also really difficult as you&amp;rsquo;re using time to change the properties of colour. Slowly, mastery of the sine wave is emerging as a necessary skill to create a well composed sketch: it allows for a much more naturalistic shift in colour and space.&lt;/p&gt;
 
-&lt;video src="http://struanfraser.co.uk/posts/2018/video/trying-libraries/chromatic-aberration-webcam.mp4" alt="" controls="true" class="full-width"&gt;&lt;/video&gt;
+&lt;video src="https://struanfraser.co.uk/posts/2018/video/trying-libraries/chromatic-aberration-webcam.mp4" alt="" controls="true" class="full-width"&gt;&lt;/video&gt;
 
 &lt;p&gt;&lt;span class="caption"&gt;Trippy camera stuff made with Open Frameworks.&lt;/span&gt;&lt;/p&gt;
 
@@ -93,7 +93,7 @@
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;img src="http://struanfraser.co.uk/posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves."&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src="https://struanfraser.co.uk/posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves."&gt;&lt;/p&gt;
 
 &lt;h2&gt;Prototyping for TV&lt;/h2&gt;
 
@@ -104,7 +104,7 @@
 &lt;p&gt;It feels like we&amp;rsquo;ve tried every prototyping tool under the sun &lt;em&gt;(R.I.P. Pixate ⚰️)&lt;/em&gt;. Using Axure we&amp;rsquo;d tied ourselves into the deepest, most convoluted conditional logic  that it was no longer feasible to return to a project. &lt;/p&gt;
 
 &lt;p&gt;A screenshot of one of my colleague&amp;rsquo;s more complicated prototypes –
-&lt;img src="http://struanfraser.co.uk/posts/2018/images/axure-chaos.png" alt="Screenshot of Axure with hundreds of conditional statements in the right hand panel." class="no-shadow" loop="true" style="margin-bottom:0;"&gt;
+&lt;img src="https://struanfraser.co.uk/posts/2018/images/axure-chaos.png" alt="Screenshot of Axure with hundreds of conditional statements in the right hand panel." class="no-shadow" loop="true" style="margin-bottom:0;"&gt;
 &lt;span class="caption" style="margin-top: -0.2em;"&gt;Axure&amp;rsquo;s conditional chaos. And that&amp;rsquo;s a fraction of it.&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;Axure was good in that it was one of the few prototyping tools that allowed for keyboard input. We&amp;rsquo;d discovered that you could buy a cheap infrared receiver called a &lt;a href="http://www.flirc.tv"&gt;FLIRC&lt;/a&gt; and that it could be used to convert infrared input into keyboard input. Perfect.&lt;/p&gt;
@@ -123,7 +123,7 @@
 
 &lt;p&gt;We&amp;rsquo;d stumbled upon &lt;a href="http://examples.framerjs.com/#event-keyboard-shortcuts.framer"&gt;this nifty little example&lt;/a&gt; which seemed to perfectly meet our needs. Unfortunately the syntax looked pretty dense compared to the mobile prototypes and it became fairly clear that Framer wasn&amp;rsquo;t designed for TV but we persevered. &lt;/p&gt;
 
-&lt;video src="http://struanfraser.co.uk/posts/2018/video/flirc.mp4" alt="Struan uses an infrared remote control to interact with a Framer prototype of YouView's TV Guide" controls="true" class="full-width" loop="true"&gt;&lt;/video&gt;
+&lt;video src="https://struanfraser.co.uk/posts/2018/video/flirc.mp4" alt="Struan uses an infrared remote control to interact with a Framer prototype of YouView's TV Guide" controls="true" class="full-width" loop="true"&gt;&lt;/video&gt;
 
 &lt;p&gt;&lt;span class="caption"&gt;Using FLIRC with a YouView TV Guide prototype&lt;/span&gt;&lt;/p&gt;
 
@@ -163,7 +163,7 @@ eventHandler = Utils.throttle 0.3, (keyCode) -&amp;gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;I&amp;rsquo;ve written a more comprehensive guide on how to use the module on Github so if the module sounds like something you&amp;rsquo;d be interested in, take a look –&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="https://github.com/Skinny-Malinky/Keyboard-Input-for-Framer"&gt;&lt;img src="http://struanfraser.co.uk/posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves."&gt;
+&lt;p&gt;&lt;a href="https://github.com/Skinny-Malinky/Keyboard-Input-for-Framer"&gt;&lt;img src="https://struanfraser.co.uk/posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves."&gt;
 &lt;span class = "caption"&gt;Get the Module&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
