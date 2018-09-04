@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/open-frameworks-and-processing"/>
     <id>http://blog.url.com/open-frameworks-and-processing</id>
     <published>2018-08-07T18:09:00+01:00</published>
-    <updated>2018-08-08T00:46:07+01:00</updated>
+    <updated>2018-09-04T22:26:10+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -89,15 +89,13 @@
     <link rel="alternate" href="http://blog.url.com/tv-and-framer"/>
     <id>http://blog.url.com/tv-and-framer</id>
     <published>2018-04-22T00:00:00+01:00</published>
-    <updated>2018-07-03T23:16:58+01:00</updated>
+    <updated>2018-09-04T22:24:21+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;p&gt;&lt;img src="https://struanfraser.co.uk/posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves."&gt;&lt;/p&gt;
 
 &lt;h2&gt;Prototyping for TV&lt;/h2&gt;
-
-&lt;hr&gt;
 
 &lt;p&gt;Information about user research and prototyping for TV is lacking compared to mobile &amp;amp; web. Most of it is transferrable but – at YouView – we&amp;rsquo;ve encountered problems where we&amp;rsquo;ve had to innovate in order to achieve what&amp;rsquo;s standard practice on other platforms. One of the biggest barriers has been prototyping because we use infrared input and there aren&amp;rsquo;t any obvious, pre-packaged solutions for prototyping with a remote control.&lt;/p&gt;
 
@@ -113,7 +111,7 @@
 
 &lt;h2&gt;Enter Framer.&lt;/h2&gt;
 
-&lt;p&gt;Framer was introduced to me by a colleague who described it as,&lt;/p&gt;
+&lt;p&gt;Framer was introduced to me by a colleague who described it as, &lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;&amp;hellip;pretty much javascript. If you can use that you might as well work on the set top box.&lt;/p&gt;
