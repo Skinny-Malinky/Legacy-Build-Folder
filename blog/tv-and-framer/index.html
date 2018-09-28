@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://struanfraser.co.uk/stylesheets/main.css">
+  <title>Digi, Aye?</title>
+</head>
+    <body>
+      <header class="site-header" role="banner">
+    <div class="intro">
+  <a href="https://struanfraser.co.uk" class="site-title">Struan Fraser</a>
+
+    <div class="site-capabilities">
+      <ul>
+        <li>Product Design</li>
+        <li>Prototyping</li>
+        <li>User Research</li>
+        <li>Creative Code</li>
+      </ul>
+    </div>
+  <div class="note">Get in touch —</div>
+    <ul class="info">
+        <li><a href="http://twitter.com/struanfraser">Twitter – @struanfraser</a></li>
+      </ul>
+  <div class="note">Other Work —</div>
+    <ul class="info">
+        <li><a href="http://behance.net/struanfraser">Behance – @struanfraser</a></li>
+        <li><a href="http://github.com/skinny-malinky">Github – @Skinny-Malinky</a></li>
+      </ul>
+  </div>
+      <div class="hover-container">
+      <div class="red-hand"></div>
+      <div class="green-hand"></div>
+      <div class="blue-hand"></div>
+    </div>
+</header>
+
+        <div class="main" role="main" id="main">
+          <div class="content-container">
+            <div class="content-margin">
+              <div class="post-description">
+                <h1>
+                  TV & Framer
+                </h1>
+                <h2 class="byline">
+                  How we build interactive prototypes at YouView
+                </h2>
+              </div>
+              <div class="post-content">
+                <article>
+                  <p><img src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves."></p>
+
+<h2>Prototyping for TV</h2>
+
+<p>Information about user research and prototyping for TV is lacking compared to mobile &amp; web. Most of it is transferrable but – at YouView – we&rsquo;ve encountered problems where we&rsquo;ve had to innovate in order to achieve what&rsquo;s standard practice on other platforms. One of the biggest barriers has been prototyping because we use infrared input and there aren&rsquo;t any obvious, pre-packaged solutions for prototyping with a remote control.</p>
+
+<p>It feels like we&rsquo;ve tried every prototyping tool under the sun <em>(R.I.P. Pixate ⚰️)</em>. Using Axure we&rsquo;d tied ourselves into the deepest, most convoluted conditional logic  that it was no longer feasible to return to a project. </p>
+
+<p>A screenshot of one of my colleague&rsquo;s more complicated prototypes –
+<img src="https://struanfraser.co.uk/blog/posts/2018/images/axure-chaos.png" alt="Screenshot of Axure with hundreds of conditional statements in the right hand panel." class="no-shadow" loop="true" style="margin-bottom:0;">
+<span class="caption" style="margin-top: -0.2em;">Axure&rsquo;s conditional chaos. And that&rsquo;s a fraction of it.</span></p>
+
+<p>Axure was good in that it was one of the few prototyping tools that allowed for keyboard input. We&rsquo;d discovered that you could buy a cheap infrared receiver called a <a href="http://www.flirc.tv">FLIRC</a> and that it could be used to convert infrared input into keyboard input. Perfect.</p>
+
+<p>We got by like this for some time and when we needed more intricate prototypes, we would hire contractors who weren&rsquo;t from a design background. That made communication difficult.</p>
+
+<h2>Enter Framer.</h2>
+
+<p>Framer was introduced to me by a colleague who described it as, </p>
+
+<blockquote>
+<p>&hellip;pretty much javascript. If you can use that you might as well work on the set top box.</p>
+</blockquote>
+
+<p>That was fairly intimidating but equipped with some decaying programming skills from school and a determination to stop using Axure (see above), I&rsquo;d decided to stick with it.</p>
+
+<p>We&rsquo;d stumbled upon <a href="http://examples.framerjs.com/#event-keyboard-shortcuts.framer">this nifty little example</a> which seemed to perfectly meet our needs. Unfortunately the syntax looked pretty dense compared to the mobile prototypes and it became fairly clear that Framer wasn&rsquo;t designed for TV but we persevered. </p>
+
+<video src="https://struanfraser.co.uk/blog/posts/2018/video/flirc.mp4" alt="Struan uses an infrared remote control to interact with a Framer prototype of YouView's TV Guide" controls="true" class="full-width" loop="true"></video>
+
+<p><span class="caption">Using FLIRC with a YouView TV Guide prototype</span></p>
+
+<p>A year of learning later and we&rsquo;re finding it&rsquo;s quite hard to get an entire design team – with little knowledge of object oriented programming – to use a tool to do something for which it wasn&rsquo;t designed. Keyboard input creates a whole host of problems, such as repeating input and complicated syntax, so we came up with a <em>(hopefully)</em> simpler solution than Framer had previously offered.</p>
+
+<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">Using a remote control with framer 😎 by <a href="https://twitter.com/struanfraser?ref_src=twsrc%5Etfw">@struanfraser</a> uhuuuu I want to try that too <a href="https://twitter.com/hashtag/framerlondon?src=hash&amp;ref_src=twsrc%5Etfw">#framerlondon</a> <a href="https://t.co/alxncDo4Mq">pic.twitter.com/alxncDo4Mq</a></p>&mdash; Marie Schweiz (@ma_rylou) <a href="https://twitter.com/ma_rylou/status/988867630500057091?ref_src=twsrc%5Etfw">April 24, 2018</a></blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h2>Keyboard Input for Framer</h2>
+
+<p>After many prototypes I felt like I&rsquo;d come to a conclusion about how I wanted to use keyboard input in a way that was relatively similar to Framer&rsquo;s existing syntax. It still requires a knowledge of functions which I think was a bit of a stumbling block. That said, you only have to write one line of code for each key which simplifies things considerably –</p>
+
+<h3>The Old Way</h3>
+<div class="highlight"><pre class="highlight plaintext"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre>enter = 13
+document.addEventListener 'keydown', (event) -&gt;
+    keyCode = event.which
+    eventHandler(keyCode)
+    event.preventDefault()
+eventHandler = Utils.throttle 0.3, (keyCode) -&gt;
+    switch keyCode
+        when enter
+            doSomething()
+</pre></td></tr></tbody></table></code></pre></div>
+<h3>The New Way</h3>
+<div class="highlight"><pre class="highlight plaintext"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>keyboard.onKey(keyboard.enter, doSomething, 0.3)
+</pre></td></tr></tbody></table></code></pre></div>
+<p>I&rsquo;ve written a more comprehensive guide on how to use the module on Github so if the module sounds like something you&rsquo;d be interested in, take a look –</p>
+
+<p><a href="https://github.com/Skinny-Malinky/Keyboard-Input-for-Framer"><img src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves.">
+<span class = "caption">Get the Module</span></a></p>
+
+                </article>
+                <hr />
+                <span class="post-meta">
+                  Published <em>22 April 2018</em>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="footer">
+    <aside>
+        <ol>
+                <li>
+                    <a href="/blog/alpha-channel-experiment">Another Alpha Channel Experiment</a>
+                        <span>
+                            Sep 27
+                        </span>
+                </li>
+                <li>
+                    <a href="/blog/open-frameworks-and-processing">Trying Some Libraries</a>
+                        <span>
+                            Aug  7
+                        </span>
+                </li>
+                <li>
+                    <a href="/blog/tv-and-framer">TV & Framer</a>
+                        <span>
+                            Apr 22
+                        </span>
+                </li>
+        </ol>
+
+        <h2>Tags</h2>
+        <ol>
+                <li>
+                    <a href="/blog/tags/creative-code">creative-code (1)</a>
+                </li>
+                <li>
+                    <a href="/blog/tags/open-frameworks">open-frameworks (2)</a>
+                </li>
+                <li>
+                    <a href="/blog/tags/processing">processing (1)</a>
+                </li>
+                <li>
+                    <a href="/blog/tags/p5js">p5js (1)</a>
+                </li>
+                <li>
+                    <a href="/blog/tags/trying-libraries">trying-libraries (1)</a>
+                </li>
+        </ol>
+
+        <h2>By Year</h2>
+        <ol>
+                <li>
+                    <a href="/blog/2018">2018 (3)</a>
+                </li>
+        </ol>
+    </aside>
+</div> -->
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script>
+          window.sr = ScrollReveal();
+          console.log(sr.reveal);
+          sr.reveal('article p', {
+            scale: 1
+          });
+        </script>
+    </body>
+
+</html>
