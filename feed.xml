@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/blog/alpha-channel-experiment"/>
     <id>http://blog.url.com/blog/alpha-channel-experiment</id>
     <published>2018-09-27T23:00:00+01:00</published>
-    <updated>2018-09-28T19:04:35+01:00</updated>
+    <updated>2018-09-28T22:00:21+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -35,6 +35,18 @@
 &lt;iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/DY1s9SmrQRE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;* Forgive the oxymoron&lt;/p&gt;
+
+&lt;h3&gt;Some Bonus Mistakes&lt;/h3&gt;
+
+&lt;div class="fukol-grid"&gt;
+    &lt;ul&gt;&lt;img alt="Struan appears with a blue hue in an office. A larger image with a red hue appears super imposed over the original image. Struan is waving." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-1.png" /&gt;&lt;/ul&gt;
+    &lt;ul&gt;&lt;img alt="Struan appears with a blue hue in an office. A larger image with a red hue appears super imposed over the original image. Struan is looking pensive." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-2.png" /&gt;&lt;/ul&gt;
+    &lt;ul&gt;&lt;img alt="Struan appears with a blue hue in an office. A larger image with a red hue appears stretched and super imposed over the original image. Struan is confused." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-3.png" /&gt;&lt;/ul&gt;
+    &lt;ul&gt;&lt;img alt="Six inverted images appear of Struan each with a different hue. The first is full colour, the second is inverted, the third is red and inverted, as is the fourth, the fifth is green and inverted and the last is blue and inverted. Struan looks very suprised and is waving." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-4.png" /&gt;&lt;/ul&gt;
+    &lt;ul&gt;&lt;img alt="Struan partially appears in an office environemnt. A distorted image appears beside the webcam feed that appears to show a broken webcam feed." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-5.png" /&gt;&lt;/ul&gt;
+    &lt;ul&gt;&lt;img alt="Struan partially appears in an office environemnt. A distorted image appears beside the webcam feed that appears to show a broken webcam feed. Struan is waving." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-6.png" /&gt;&lt;/ul&gt;
+    &lt;ul&gt;&lt;img alt="Six inverted images appear of Struan each with a different hue. The first is full colour, the second is inverted, the third is red and inverted, as is the fourth, the fifth is green and inverted and the last is blue and inverted. Struan is talking to someone out of shot." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-7.png" /&gt;&lt;/ul&gt;
+&lt;/div&gt;
 </content>
   </entry>
   <entry>
