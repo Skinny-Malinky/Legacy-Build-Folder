@@ -52,7 +52,9 @@
               </div>
               <div class="post-content">
                 <article>
-                  <p><img src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves."></p>
+                  <figure>
+<video src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.mp4" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves." controls="false" class="full-width" autoplay="true" loop="true"></video>
+</figure>
 
 <h2>Prototyping for TV</h2>
 
@@ -61,8 +63,10 @@
 <p>It feels like we&rsquo;ve tried every prototyping tool under the sun <em>(R.I.P. Pixate ⚰️)</em>. Using Axure we&rsquo;d tied ourselves into the deepest, most convoluted conditional logic  that it was no longer feasible to return to a project. </p>
 
 <p>A screenshot of one of my colleague&rsquo;s more complicated prototypes –
-<img src="https://struanfraser.co.uk/blog/posts/2018/images/axure-chaos.png" alt="Screenshot of Axure with hundreds of conditional statements in the right hand panel." class="no-shadow" loop="true" style="margin-bottom:0;">
-<span class="caption" style="margin-top: -0.2em;">Axure&rsquo;s conditional chaos. And that&rsquo;s a fraction of it.</span></p>
+<figure>
+<img src="https://struanfraser.co.uk/blog/posts/2018/images/axure-chaos.png" alt="Screenshot of Axure with hundreds of conditional statements in the right hand panel." class="no-shadow" loop="true" style="margin-bottom:0;"></img>
+</figure>
+<figcaption style="margin-top: -0.2em;">Axure&rsquo;s conditional chaos. And that&rsquo;s a fraction of it.</figcaption></p>
 
 <p>Axure was good in that it was one of the few prototyping tools that allowed for keyboard input. We&rsquo;d discovered that you could buy a cheap infrared receiver called a <a href="http://www.flirc.tv">FLIRC</a> and that it could be used to convert infrared input into keyboard input. Perfect.</p>
 
@@ -78,11 +82,11 @@
 
 <p>That was fairly intimidating but equipped with some decaying programming skills from school and a determination to stop using Axure (see above), I&rsquo;d decided to stick with it.</p>
 
-<p>We&rsquo;d stumbled upon <a href="http://examples.framerjs.com/#event-keyboard-shortcuts.framer">this nifty little example</a> which seemed to perfectly meet our needs. Unfortunately the syntax looked pretty dense compared to the mobile prototypes and it became fairly clear that Framer wasn&rsquo;t designed for TV but we persevered. </p>
-
+<p>We&rsquo;d stumbled upon <a href="http://examples.framerjs.com/#event-keyboard-shortcuts.framer">this nifty little example</a> which seemed to perfectly meet our needs. Unfortunately the syntax looked pretty dense compared to the mobile prototypes and it became fairly clear that Framer wasn&rsquo;t designed for TV but we persevered. 
+<figure>
 <video src="https://struanfraser.co.uk/blog/posts/2018/video/flirc.mp4" alt="Struan uses an infrared remote control to interact with a Framer prototype of YouView's TV Guide" controls="true" class="full-width" loop="true"></video>
-
-<p><span class="caption">Using FLIRC with a YouView TV Guide prototype</span></p>
+</figure>
+<figcaption>Using FLIRC with a YouView TV Guide prototype</figcaption></p>
 
 <p>A year of learning later and we&rsquo;re finding it&rsquo;s quite hard to get an entire design team – with little knowledge of object oriented programming – to use a tool to do something for which it wasn&rsquo;t designed. Keyboard input creates a whole host of problems, such as repeating input and complicated syntax, so we came up with a <em>(hopefully)</em> simpler solution than Framer had previously offered.</p>
 
@@ -118,10 +122,13 @@ eventHandler = Utils.throttle 0.3, (keyCode) -&gt;
 <div class="highlight"><pre class="highlight plaintext"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>keyboard.onKey(keyboard.enter, doSomething, 0.3)
 </pre></td></tr></tbody></table></code></pre></div>
-<p>I&rsquo;ve written a more comprehensive guide on how to use the module on Github so if the module sounds like something you&rsquo;d be interested in, take a look –</p>
-
-<p><a href="https://github.com/Skinny-Malinky/Keyboard-Input-for-Framer"><img src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.gif" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves.">
-<span class = "caption">Get the Module</span></a></p>
+<p>I&rsquo;ve written a more comprehensive guide on how to use the module on Github so if the module sounds like something you&rsquo;d be interested in, take a look –
+<figure>
+<a href="https://github.com/Skinny-Malinky/Keyboard-Input-for-Framer">
+<figure>
+<video src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.mp4" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves." controls="false" class="full-width" autoplay="true" loop="true"></video>
+</figure>
+<figcaption>Get the Module</figcaption></a></p>
 
                 </article>
                 <hr />
@@ -158,7 +165,7 @@ eventHandler = Utils.throttle 0.3, (keyCode) -&gt;
         <h2>Tags</h2>
         <ol>
                 <li>
-                    <a href="/blog/tags/creative-code">creative-code (1)</a>
+                    <a href="/blog/tags/creative-code">creative-code (2)</a>
                 </li>
                 <li>
                     <a href="/blog/tags/open-frameworks">open-frameworks (2)</a>
@@ -171,6 +178,15 @@ eventHandler = Utils.throttle 0.3, (keyCode) -&gt;
                 </li>
                 <li>
                     <a href="/blog/tags/trying-libraries">trying-libraries (1)</a>
+                </li>
+                <li>
+                    <a href="/blog/tags/framer">framer (1)</a>
+                </li>
+                <li>
+                    <a href="/blog/tags/portfolio">portfolio (1)</a>
+                </li>
+                <li>
+                    <a href="/blog/tags/frameworks">frameworks (1)</a>
                 </li>
         </ol>
 
