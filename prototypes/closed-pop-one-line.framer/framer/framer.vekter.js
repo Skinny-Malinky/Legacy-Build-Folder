@@ -1,1 +1,1 @@
-!function(e){e.__vekterVariables&&e.__vekterVariables.map(function(t){delete e[t]}),Object.assign(e,{}),e.__vekterVariables=[""],"function"==typeof Framer.CurrentContext.layout&&Framer.CurrentContext.layout()}(window);
+(function(scope) {if (scope["__vekterVariables"]) { scope["__vekterVariables"].map(function(variable) { delete scope[variable] } ) };Object.assign(scope, {});scope["__vekterVariables"] = [""];if (typeof Framer.CurrentContext.layout === 'function') {Framer.CurrentContext.layout()};})(window);

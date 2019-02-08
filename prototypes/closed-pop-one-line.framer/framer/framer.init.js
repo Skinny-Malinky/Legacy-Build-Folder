@@ -1,1 +1,108 @@
-!function(){function e(){return-1==window.location.protocol.indexOf("file")}function t(){return Utils.isWebKit()}function r(){s.parentElement.removeChild(s),a()}function o(e){s=document.createElement("div"),s.classList.add("framerAlertBackground"),s.innerHTML=e,document.addEventListener("DOMContentLoaded",function(){document.body.appendChild(s)}),window.dismissAlert=r}function n(){var e="";e+="<div class='framerAlert'>",e+="<strong>Error: Not A WebKit Browser</strong>",e+="Your browser is not supported. <br> Please use Safari or Chrome.<br>",e+="<a class='btn' href='javascript:void(0)' onclick='dismissAlert();'>Try anyway</a>",e+="</div>",o(e)}function i(){var e="";e+="<div class='framerAlert'>",e+="<strong>Error: Local File Restrictions</strong>",e+="Preview this prototype with Framer Mirror or learn more about ",e+="<a href='https://github.com/koenbok/Framer/wiki/LocalLoading'>file restrictions</a>.<br>",e+="<a class='btn' href='javascript:void(0)' onclick='dismissAlert();'>Try anyway</a>",e+="</div>",o(e)}function a(e){CoffeeScript.load("app.coffee",e)}function d(){document.addEventListener("DOMContentLoaded",function(){""==document.title&&(window.FramerStudioInfo&&window.FramerStudioInfo.documentTitle?document.title=window.FramerStudioInfo.documentTitle:document.title=window.location.pathname.replace(/\//g,""))})}function c(){if(!Utils.isFramerStudio())return d(),t()?e()?void a(function(){var e;"undefined"!=typeof Framer&&null!==Framer&&null!=(e=Framer.CurrentContext)&&"function"==typeof e.emit&&e.emit("loaded:project")}):i():n()}var s;c()}();
+(function() {
+
+function isFileLoadingAllowed() {
+	return (window.location.protocol.indexOf("file") == -1)
+}
+
+function isHomeScreened() {
+	return ("standalone" in window.navigator) && window.navigator.standalone == true
+}
+
+function isCompatibleBrowser() {
+	return Utils.isWebKit()
+}
+
+var alertNode;
+
+function dismissAlert() {
+	alertNode.parentElement.removeChild(alertNode)
+	loadProject()
+}
+
+function showAlert(html) {
+
+	alertNode = document.createElement("div")
+
+	alertNode.classList.add("framerAlertBackground")
+	alertNode.innerHTML = html
+
+	document.addEventListener("DOMContentLoaded", function(event) {
+		document.body.appendChild(alertNode)
+	})
+
+	window.dismissAlert = dismissAlert;
+}
+
+function showBrowserAlert() {
+	var html = ""
+	html += "<div class='framerAlert'>"
+	html += "<strong>Error: Not A WebKit Browser</strong>"
+	html += "Your browser is not supported. <br> Please use Safari or Chrome.<br>"
+	html += "<a class='btn' href='javascript:void(0)' onclick='dismissAlert();'>Try anyway</a>"
+	html += "</div>"
+
+	showAlert(html)
+}
+
+function showFileLoadingAlert() {
+	var html = ""
+	html += "<div class='framerAlert'>"
+	html += "<strong>Error: Local File Restrictions</strong>"
+	html += "Preview this prototype with Framer Mirror or learn more about "
+	html += "<a href='https://github.com/koenbok/Framer/wiki/LocalLoading'>file restrictions</a>.<br>"
+	html += "<a class='btn' href='javascript:void(0)' onclick='dismissAlert();'>Try anyway</a>"
+	html += "</div>"
+
+	showAlert(html)
+}
+
+function loadProject(callback) {
+	CoffeeScript.load("app.coffee", callback)
+}
+
+function setDefaultPageTitle() {
+	// If no title was set we set it to the project folder name so
+	// you get a nice name on iOS if you bookmark to desktop.
+	document.addEventListener("DOMContentLoaded", function() {
+		if (document.title == "") {
+			if (window.FramerStudioInfo && window.FramerStudioInfo.documentTitle) {
+				document.title = window.FramerStudioInfo.documentTitle
+			} else {
+				document.title = window.location.pathname.replace(/\//g, "")
+			}
+		}
+	})
+}
+
+function init() {
+
+	if (Utils.isFramerStudio()) {
+		return
+	}
+
+	setDefaultPageTitle()
+
+	if (!isCompatibleBrowser()) {
+		return showBrowserAlert()
+	}
+
+	if (!isFileLoadingAllowed()) {
+		return showFileLoadingAlert()
+	}
+
+	loadProject(function(){
+		// CoffeeScript: Framer?.CurrentContext?.emit?("loaded:project")
+		var context;
+		if (typeof Framer !== "undefined" && Framer !== null) {
+			if ((context = Framer.CurrentContext) != null) {
+				if (typeof context.emit === "function") {
+					context.emit("loaded:project");
+				}
+			}
+		}
+	})
+}
+
+init()
+
+})()
