@@ -1,0 +1,10 @@
+(function() {
+  exports.myVar = "myVariable";
+
+  exports.myFunction = function() {
+    return print("myFunction is running");
+  };
+
+  exports.myArray = [1, 2, 3];
+
+}).call(this);
