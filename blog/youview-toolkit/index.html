@@ -7,7 +7,7 @@
   <meta name="description" content="Struan is a designer who like to create compelling experiences through research and code. Here, you'll find tools for designers, experiments and reflection.">
   <link rel="stylesheet" href="https://struanfraser.co.uk/stylesheets/main.css">
   <title>
-  Another Alpha Channel Experiment
+  TVKit - A TV Prototyping Toolkit
   </title>
 </head>
     <body>
@@ -46,49 +46,66 @@
             <div class="content-margin">
               <div class="post-description">
                 <h1>
-                  Another Alpha Channel Experiment
+                  TVKit - A TV Prototyping Toolkit
                 </h1>
                 <h2 class="byline">
-                  My infatuation with alpha channels is growing
+                  Some more tools for prototyping TV experiences in Framer Classic
                 </h2>
               </div>
                 <article>
                   <figure>
-<video src="https://struanfraser.co.uk/blog/posts/2018/video/alpha-trail.mp4" alt="" controls="true" class="full-width" autoplay="false" loop="true" alt="Struan is moving in a staggered way that distorts red, green and blue colour through time."></video>
+<img src="https://struanfraser.co.uk/blog/posts/2019/images/tv-kit/carousel.gif" alt="The text types 'carousel = new Carousel' and a carousel appears in the preview window" class="full-width"></img>
 </figure>
 
-<figcaption>Requires a cyberpunk backing track</figcaption>
+<p>I&rsquo;ve finally got access to Framer X again! Unfortunately I haven&rsquo;t had much access to time. Until I do work up the courage to begin properly learning React again, I have some tools that I&rsquo;d like to share. </p>
 
-<h2>Stressing out</h2>
+<p>First of all, there&rsquo;s EasyNav.
+<a href="https://github.com/Skinny-Malinky/EasyNav-for-Framer-Studio" target="_blank">
+<figure>
+<img src="https://struanfraser.co.uk/blog/posts/2019/images/tv-kit/easynav.png" alt="Five frames show a highlighted position in logical order. The center frame shows blue a highlight; the top frame shows a slightly higher highlight in the frame; the bottom frame, slightly lower; the left frame shows a highlight to the left and the right frame shows a highlight to the right." class="full-width"></img>
+</figure>
+<figcaption>
+This is EasyNav
+</figcaption>
+</a>
+<h3>Taking it back to the design view</h3>
+<p>I made EasyNav because I wanted a flexible tool that would allow me to quickly make D-Pad navigable prototypes without having to spend too much time with code. It also lowers the barrier of entry to those who want to use it while allowing you to use Framer&rsquo;s full feature set if you want to.</p></p>
 
-<p>Stress! That&rsquo;s my aim. I wanted to go further than last time. It&rsquo;s clear to me that time is an important element as the last sketch felt <a href="https://struanfraser.co.uk/blog/open-frameworks-and-processing#trippy-webcam" target="_blank">disconnected and loose</a>. This has much more of a satisfying, <em>disconcerting</em>* feel to it. Whenever I use it I feel like I&rsquo;m becoming more stressed just by appearing and moving in the image. It almost makes you want to stop moving. </p>
+<h4>How it works</h4>
 
-<p>I suspect this won&rsquo;t be the end of my interest in alpha channels. I&rsquo;ve been looking at an awful lot of <a href="https://www.pinterest.co.uk/struanf/80s-90s-retro-design/" target="_blank"> old VHS covers on pinterest which may have something to do with it.</a></p>
+<p>
+EasyNav reads the document and infers navigation from the position of each Frame. So if you draw a Frame above another one, EasyNav will allow you to navigate up to the frame above it. On top of that, it also allows you to override those default behaviours if you wish to block navigation for whatever reason. You can find more instructions in the example project on the Github page: <a href="https://github.com/Skinny-Malinky/EasyNav-for-Framer-Studio">EasyNav for Framer Studio - Github</a>
+</p>
 
-<p>It works by allowing the red alpha channel to move around in real time but only occasionally capturing the blue and green channels&rsquo; frames. They also have a blend mode applied to them as appeared in the previous sketch.</p>
+<h3>TVKit</h3>
 
-<p>Hopefully I&rsquo;ll be able to produce a p5js version some time soon so I can share it around but until then I&rsquo;ll settle for just listening to Carpenter Brut until my ears bleed –</p>
+<p>This project was made to give us a set of standard patterns to use for prototyping at YouView. I&rsquo;ve removed all of the YouView stuff but it still leaves you with quite a lot of power and has also taught me a great deal about javascript. I&rsquo;ll post some gifs to show the basics of it:
+<figure>
+<img src="https://struanfraser.co.uk/blog/posts/2019/images/tv-kit/carousel-two.gif" alt="carousel = new Carousel is written in an IDE and the preview shows the carousel appear." class="full-width"></img>
+</figure>
+<figure>
+<img src="https://struanfraser.co.uk/blog/posts/2019/images/tv-kit/menu.gif" alt="menu = new Menu is written in an IDE and the preview shows the menu appear." class="full-width"></img>
+</figure>
+<figure>
+<img src="https://struanfraser.co.uk/blog/posts/2019/images/tv-kit/programme-tile.gif" alt="programmeTile = new ProgrammeTile is written in an IDE and the preview shows the tile appear" class="full-width"></img>
+</figure></p>
 
-<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/DY1s9SmrQRE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p>At YouView we have set these up to work with our APIs meaning we get all of the cloud metadata that we&rsquo;re not showing here. This means we have carousels that work with Search, Discover, the Main Menu, the Miniguide and any combined mix you might want. These components are also fully interactive. One of the problems I&rsquo;d started to notice however was how we could navigate between the components, this is where I created Navigables.</p>
 
-<p>* Forgive the oxymoron</p>
+<p>Navigables work off of a fairly simple premise, choose the direction you won&rsquo;t to go in, then choose the next Navigable you&rsquo;d like to highlight. An example of this might be</p>
 
-<h3>Some Bonus Mistakes</h3>
+<p><code>myNavigable.onUpOut(-&gt; highlight.setContext(otherNavigable))</code></p>
 
-<div class="fukol-grid">
-    <ul><figure><img alt="Struan appears with a blue hue in an office. A larger image with a red hue appears super imposed over the original image. Struan is waving." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-1.png" /></figure></ul>
-    <ul><figure><img alt="Struan appears with a blue hue in an office. A larger image with a red hue appears super imposed over the original image. Struan is looking pensive." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-2.png" /></figure></ul>
-    <ul><figure><img alt="Struan appears with a blue hue in an office. A larger image with a red hue appears stretched and super imposed over the original image. Struan is confused." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-3.png" /></figure></ul>
-    <ul><figure><img alt="Six inverted images appear of Struan each with a different hue. The first is full colour, the second is inverted, the third is red and inverted, as is the fourth, the fifth is green and inverted and the last is blue and inverted. Struan looks very suprised and is waving." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-4.png" /></figure></ul>
-    <ul><figure><img alt="Struan partially appears in an office environemnt. A distorted image appears beside the webcam feed that appears to show a broken webcam feed." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-5.png" /></figure></ul>
-    <ul><figure><img alt="Struan partially appears in an office environemnt. A distorted image appears beside the webcam feed that appears to show a broken webcam feed. Struan is waving." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-6.png" /></figure></ul>
-    <ul><figure><img alt="Six inverted images appear of Struan each with a different hue. The first is full colour, the second is inverted, the third is red and inverted, as is the fourth, the fifth is green and inverted and the last is blue and inverted. Struan is talking to someone out of shot." src="https://struanfraser.co.uk/blog/posts/2018/images/alpha-channels/glitch-7.png" /></figure></ul>
-</div>
+<p>I&rsquo;ve found it really useful for quickly spinning up prototypes as it allows you to start sending layer-based events based on keyboard input. It also works great with a <a href="https://flirc.tv/">FLIRC</a> and other controllers.</p>
+
+<p>If you try any of this, let me know! I suspect my documentation might trip you up here as I haven&rsquo;t been the most studious of documenters so <a href="https://twitter.com/struanfraser" target="_blank">give me a shout if you run into any problems</a>.</p>
+
+<p>I&rsquo;m going to try and find some time for Framer X now, though I&rsquo;ve got some research coming up and I&rsquo;ll likely have to fallback onto TVKit as it&rsquo;s served me well up until now!</p>
 
                 </article>
                 <hr />
                 <span class="post-meta">
-                  Published <em>27 September 2018</em>
+                  Published <em> 3 June 2019</em>
                 </span>
             </div>
           </div>
