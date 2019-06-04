@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://struanfraser.co.uk/blog/tv-kit"/>
     <id>http://struanfraser.co.uk/blog/tv-kit</id>
     <published>2019-06-03T17:39:00+01:00</published>
-    <updated>2019-06-04T01:48:20+01:00</updated>
+    <updated>2019-06-04T01:54:08+01:00</updated>
     <author>
       <name>Struan Fraser</name>
     </author>
@@ -62,6 +62,8 @@ EasyNav reads the document and infers navigation from the position of each Frame
 &lt;p&gt;&lt;code&gt;myNavigable.onUpOut(-&amp;gt; highlight.setContext(otherNavigable))&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve found it really useful for quickly spinning up prototypes as it allows you to start sending layer-based events based on keyboard input. It also works great with a &lt;a href="https://flirc.tv/"&gt;FLIRC&lt;/a&gt; and other controllers.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/Skinny-Malinky/TV-Kit-for-Framer-Classic" target="_blank"&gt;You can find more examples and code here.&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;If you try any of this, let me know! I suspect my documentation might trip you up here as I haven&amp;rsquo;t been the most studious of documenters so &lt;a href="https://twitter.com/struanfraser" target="_blank"&gt;give me a shout if you run into any problems&lt;/a&gt;.&lt;/p&gt;
 
