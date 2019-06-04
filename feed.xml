@@ -5,10 +5,69 @@
   <id>http://struanfraser.co.uk/blog</id>
   <link href="http://struanfraser.co.uk/blog"/>
   <link href="http://struanfraser.co.uk/feed.xml" rel="self"/>
-  <updated>2018-09-27T23:00:00+01:00</updated>
+  <updated>2019-06-03T17:39:00+01:00</updated>
   <author>
     <name>Struan Fraser</name>
   </author>
+  <entry>
+    <title>TVKit - A TV Prototyping Toolkit</title>
+    <link rel="alternate" href="http://struanfraser.co.uk/blog/tv-kit"/>
+    <id>http://struanfraser.co.uk/blog/tv-kit</id>
+    <published>2019-06-03T17:39:00+01:00</published>
+    <updated>2019-06-04T01:48:20+01:00</updated>
+    <author>
+      <name>Struan Fraser</name>
+    </author>
+    <content type="html">&lt;figure&gt;
+&lt;img src="https://struanfraser.co.uk/blog/posts/2019/images/tv-kit/carousel.gif" alt="The text types 'carousel = new Carousel' and a carousel appears in the preview window" class="full-width"&gt;&lt;/img&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I&amp;rsquo;ve finally got access to Framer X again! Unfortunately I haven&amp;rsquo;t had much access to time. Until I do work up the courage to begin properly learning React again, I have some tools that I&amp;rsquo;d like to share. &lt;/p&gt;
+
+&lt;p&gt;First of all, there&amp;rsquo;s EasyNav.
+&lt;a href="https://github.com/Skinny-Malinky/EasyNav-for-Framer-Studio" target="_blank"&gt;
+&lt;figure&gt;
+&lt;img src="https://struanfraser.co.uk/blog/posts/2019/images/tv-kit/easynav.png" alt="Five frames show a highlighted position in logical order. The center frame shows blue a highlight; the top frame shows a slightly higher highlight in the frame; the bottom frame, slightly lower; the left frame shows a highlight to the left and the right frame shows a highlight to the right." class="full-width"&gt;&lt;/img&gt;
+&lt;/figure&gt;
+&lt;figcaption&gt;
+This is EasyNav
+&lt;/figcaption&gt;
+&lt;/a&gt;
+&lt;h3&gt;Taking it back to the design view&lt;/h3&gt;
+&lt;p&gt;I made EasyNav because I wanted a flexible tool that would allow me to quickly make D-Pad navigable prototypes without having to spend too much time with code. It also lowers the barrier of entry to those who want to use it while allowing you to use Framer&amp;rsquo;s full feature set if you want to.&lt;/p&gt;&lt;/p&gt;
+
+&lt;h4&gt;How it works&lt;/h4&gt;
+
+&lt;p&gt;
+EasyNav reads the document and infers navigation from the position of each Frame. So if you draw a Frame above another one, EasyNav will allow you to navigate up to the frame above it. On top of that, it also allows you to override those default behaviours if you wish to block navigation for whatever reason. You can find more instructions in the example project on the Github page: &lt;a href="https://github.com/Skinny-Malinky/EasyNav-for-Framer-Studio"&gt;EasyNav for Framer Studio - Github&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3&gt;TVKit&lt;/h3&gt;
+
+&lt;p&gt;This project was made to give us a set of standard patterns to use for prototyping at YouView. I&amp;rsquo;ve removed all of the YouView stuff but it still leaves you with quite a lot of power and has also taught me a great deal about javascript. I&amp;rsquo;ll post some gifs to show the basics of it:
+&lt;figure&gt;
+&lt;img src="https://struanfraser.co.uk/blog/posts/2019/images/tv-kit/carousel-two.gif" alt="carousel = new Carousel is written in an IDE and the preview shows the carousel appear." class="full-width"&gt;&lt;/img&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src="https://struanfraser.co.uk/blog/posts/2019/images/tv-kit/menu.gif" alt="menu = new Menu is written in an IDE and the preview shows the menu appear." class="full-width"&gt;&lt;/img&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src="https://struanfraser.co.uk/blog/posts/2019/images/tv-kit/programme-tile.gif" alt="programmeTile = new ProgrammeTile is written in an IDE and the preview shows the tile appear" class="full-width"&gt;&lt;/img&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;At YouView we have set these up to work with our APIs meaning we get all of the cloud metadata that we&amp;rsquo;re not showing here. This means we have carousels that work with Search, Discover, the Main Menu, the Miniguide and any combined mix you might want. These components are also fully interactive. One of the problems I&amp;rsquo;d started to notice however was how we could navigate between the components, this is where I created Navigables.&lt;/p&gt;
+
+&lt;p&gt;Navigables work off of a fairly simple premise, choose the direction you won&amp;rsquo;t to go in, then choose the next Navigable you&amp;rsquo;d like to highlight. An example of this might be&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;myNavigable.onUpOut(-&amp;gt; highlight.setContext(otherNavigable))&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve found it really useful for quickly spinning up prototypes as it allows you to start sending layer-based events based on keyboard input. It also works great with a &lt;a href="https://flirc.tv/"&gt;FLIRC&lt;/a&gt; and other controllers.&lt;/p&gt;
+
+&lt;p&gt;If you try any of this, let me know! I suspect my documentation might trip you up here as I haven&amp;rsquo;t been the most studious of documenters so &lt;a href="https://twitter.com/struanfraser" target="_blank"&gt;give me a shout if you run into any problems&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m going to try and find some time for Framer X now, though I&amp;rsquo;ve got some research coming up and I&amp;rsquo;ll likely have to fallback onto TVKit as it&amp;rsquo;s served me well up until now!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Another Alpha Channel Experiment</title>
     <link rel="alternate" href="http://struanfraser.co.uk/blog/alpha-channel-experiment"/>
