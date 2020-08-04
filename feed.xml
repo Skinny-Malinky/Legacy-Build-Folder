@@ -201,13 +201,15 @@ EasyNav reads the document and infers navigation from the position of each Frame
     <link rel="alternate" href="http://struanfraser.co.uk/blog/tv-and-framer"/>
     <id>http://struanfraser.co.uk/blog/tv-and-framer</id>
     <published>2018-04-22T00:00:00+01:00</published>
-    <updated>2019-09-26T21:27:26+01:00</updated>
+    <updated>2020-02-18T14:43:37+00:00</updated>
     <author>
       <name>Struan Fraser</name>
     </author>
     <content type="html">&lt;figure&gt;
 &lt;video src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.mp4" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves." controls="false" class="full-width" autoplay="true" loop="true"&gt;&lt;/video&gt;
 &lt;/figure&gt;
+
+&lt;figcaption&gt;Hello world, hello TV&lt;/figcaption&gt;
 
 &lt;h2&gt;Prototyping for TV&lt;/h2&gt;
 
