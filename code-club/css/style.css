@@ -40,9 +40,6 @@ h1, h2{
   font-family: "Fira Sans";
   font-style: italic;
 }
-h2 {
-  margin-top: 4rem;
-}
 li + ol,
 li + ul {
   padding-left: 1.9rem;
