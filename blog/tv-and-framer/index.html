@@ -7,12 +7,12 @@
   <meta name="description" content="Struan is a designer who like to create compelling experiences through research and code. Here, you'll find tools for designers, experiments and reflection.">
   <link rel="stylesheet" href="https://struanfraser.co.uk/stylesheets/main.css">
   <title>
-  TV & Framer
+  TV & Framer | Struan's blog
   </title>
 </head>
     <body>
       <header class="site-header" role="banner">
-    <div class="intro">
+    <div class="intro" id="top">
   <a href="https://struanfraser.co.uk" class="site-title">Struan Fraser</a>
 
     <div class="site-capabilities">
@@ -41,7 +41,11 @@
     </div>
 </header>
 
-        <div class="main" role="main" id="main">
+        <div class="nav-layout">
+        <nav>
+        <a href = "../../#main" class="back">Blog posts</a>
+        </nav>
+        <main role="main" id="main">
           <div class="content-container">
             <div class="content-margin">
               <div class="post-description">
@@ -55,9 +59,10 @@
                 <article>
                   <figure>
 <video src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.mp4" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves." controls="false" class="full-width" autoplay="true" loop="true"></video>
+<figcaption>Hello world, hello TV</figcaption>
 </figure>
 
-<h2>Prototyping for TV</h2>
+<h3>Prototyping for TV</h3>
 
 <p>Information about user research and prototyping for TV is lacking compared to mobile &amp; web. Most of it is transferrable but – at YouView – we&rsquo;ve encountered problems where we&rsquo;ve had to innovate in order to achieve what&rsquo;s standard practice on other platforms. One of the biggest barriers has been prototyping because we use infrared input and there aren&rsquo;t any obvious, pre-packaged solutions for prototyping with a remote control.</p>
 
@@ -66,14 +71,14 @@
 <p>A screenshot of one of my colleague&rsquo;s more complicated prototypes –
 <figure>
 <img src="https://struanfraser.co.uk/blog/posts/2018/images/axure-chaos.png" alt="Screenshot of Axure with hundreds of conditional statements in the right hand panel." class="no-shadow" loop="true" style="margin-bottom:0;"></img>
-</figure>
-<figcaption style="margin-top: -0.2em;">Axure&rsquo;s conditional chaos. And that&rsquo;s a fraction of it.</figcaption></p>
+<figcaption style="margin-top: -0.2em;">Axure&rsquo;s conditional chaos. And that&rsquo;s a fraction of it.</figcaption>
+</figure></p>
 
 <p>Axure was good in that it was one of the few prototyping tools that allowed for keyboard input. We&rsquo;d discovered that you could buy a cheap infrared receiver called a <a href="http://www.flirc.tv">FLIRC</a> and that it could be used to convert infrared input into keyboard input. Perfect.</p>
 
 <p>We got by like this for some time and when we needed more intricate prototypes, we would hire contractors who weren&rsquo;t from a design background. That made communication difficult.</p>
 
-<h2>Enter Framer.</h2>
+<h3>Enter Framer.</h3>
 
 <p>Framer was introduced to me by a colleague who described it as, </p>
 
@@ -86,8 +91,8 @@
 <p>We&rsquo;d stumbled upon <a href="http://examples.framerjs.com/#event-keyboard-shortcuts.framer">this nifty little example</a> which seemed to perfectly meet our needs. Unfortunately the syntax looked pretty dense compared to the mobile prototypes and it became fairly clear that Framer wasn&rsquo;t designed for TV but we persevered. 
 <figure>
 <video src="https://struanfraser.co.uk/blog/posts/2018/video/flirc.mp4" alt="Struan uses an infrared remote control to interact with a Framer prototype of YouView's TV Guide" controls="true" class="full-width" loop="true"></video>
-</figure>
-<figcaption>Using FLIRC with a YouView TV Guide prototype</figcaption></p>
+<figcaption>Using FLIRC with a YouView TV Guide prototype</figcaption>
+</figure></p>
 
 <p>A year of learning later and we&rsquo;re finding it&rsquo;s quite hard to get an entire design team – with little knowledge of object oriented programming – to use a tool to do something for which it wasn&rsquo;t designed. Keyboard input creates a whole host of problems, such as repeating input and complicated syntax, so we came up with a <em>(hopefully)</em> simpler solution than Framer had previously offered.</p>
 
@@ -95,11 +100,11 @@
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<h2>Keyboard Input for Framer</h2>
+<h3>Keyboard Input for Framer</h3>
 
 <p>After many prototypes I felt like I&rsquo;d come to a conclusion about how I wanted to use keyboard input in a way that was relatively similar to Framer&rsquo;s existing syntax. It still requires a knowledge of functions which I think was a bit of a stumbling block. That said, you only have to write one line of code for each key which simplifies things considerably –</p>
 
-<h3>The Old Way</h3>
+<h4>The Old Way</h4>
 <div class="highlight"><pre class="highlight plaintext"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -119,7 +124,7 @@ eventHandler = Utils.throttle 0.3, (keyCode) -&gt;
         when enter
             doSomething()
 </pre></td></tr></tbody></table></code></pre></div>
-<h3>The New Way</h3>
+<h4>The New Way</h4>
 <div class="highlight"><pre class="highlight plaintext"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>keyboard.onKey(keyboard.enter, doSomething, 0.3)
 </pre></td></tr></tbody></table></code></pre></div>
@@ -128,15 +133,18 @@ eventHandler = Utils.throttle 0.3, (keyCode) -&gt;
 <a href="https://github.com/Skinny-Malinky/Keyboard-Input-for-Framer">
 <figure>
 <video src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.mp4" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves." controls="false" class="full-width" autoplay="true" loop="true"></video>
+<figcaption>Get the Module</figcaption>
 </figure>
-<figcaption>Get the Module</figcaption></a></p>
+</a></p>
 
                 </article>
                 <hr />
                 <span class="post-meta">
                   Published <em>22 April 2018</em>
                 </span>
+                <a href="#top" class="back-to-top"></a>
             </div>
+          </main>
           </div>
         </div>
         <!-- <div class="footer">
