@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
   </title>
 </head>
     <body>
-      <header class="site-header" role="banner">
+      <header class="site-header">
     <div class="intro" id="top">
   <a href="https://struanfraser.co.uk" class="site-title">Struan Fraser</a>
 
@@ -45,7 +45,8 @@
         <nav>
         <a href = "../../#main" class="back">Blog posts</a>
         </nav>
-        <main role="main" id="main">
+        <main id="main">
+        <article>
           <div class="content-container">
             <div class="content-margin">
               <div class="post-description">
@@ -56,9 +57,8 @@
                   How we build interactive prototypes at YouView
                 </h2>
               </div>
-                <article>
                   <figure>
-<video src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.mp4" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves." controls="false" class="full-width" autoplay="true" loop="true"></video>
+<video src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.mp4" controls="false" class="full-width" autoplay loop></video>
 <figcaption>Hello world, hello TV</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@
 
 <p>A screenshot of one of my colleague&rsquo;s more complicated prototypes –
 <figure>
-<img src="https://struanfraser.co.uk/blog/posts/2018/images/axure-chaos.png" alt="Screenshot of Axure with hundreds of conditional statements in the right hand panel." class="no-shadow" loop="true" style="margin-bottom:0;"></img>
+<img src="https://struanfraser.co.uk/blog/posts/2018/images/axure-chaos.png" alt="Screenshot of Axure with hundreds of conditional statements in the right hand panel." class="no-shadow" loop style="margin-bottom:0;"></img>
 <figcaption style="margin-top: -0.2em;">Axure&rsquo;s conditional chaos. And that&rsquo;s a fraction of it.</figcaption>
 </figure></p>
 
@@ -90,7 +90,7 @@
 
 <p>We&rsquo;d stumbled upon <a href="http://examples.framerjs.com/#event-keyboard-shortcuts.framer">this nifty little example</a> which seemed to perfectly meet our needs. Unfortunately the syntax looked pretty dense compared to the mobile prototypes and it became fairly clear that Framer wasn&rsquo;t designed for TV but we persevered. 
 <figure>
-<video src="https://struanfraser.co.uk/blog/posts/2018/video/flirc.mp4" alt="Struan uses an infrared remote control to interact with a Framer prototype of YouView's TV Guide" controls="true" class="full-width" loop="true"></video>
+<video src="https://struanfraser.co.uk/blog/posts/2018/video/flirc.mp4" controls class="full-width" loop></video>
 <figcaption>Using FLIRC with a YouView TV Guide prototype</figcaption>
 </figure></p>
 
@@ -132,98 +132,21 @@ eventHandler = Utils.throttle 0.3, (keyCode) -&gt;
 <figure>
 <a href="https://github.com/Skinny-Malinky/Keyboard-Input-for-Framer">
 <figure>
-<video src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.mp4" alt="A light blue gradient background with the words 'hello world', in white, appearing to type themselves." controls="false" class="full-width" autoplay="true" loop="true"></video>
+<video src="https://struanfraser.co.uk/blog/posts/2018/images/keyboard-input.mp4" controls="false" class="full-width" autoplay loop></video>
 <figcaption>Get the Module</figcaption>
 </figure>
 </a></p>
 
-                </article>
                 <hr />
                 <span class="post-meta">
                   Published <em>22 April 2018</em>
                 </span>
+                </article>
                 <a href="#top" class="back-to-top"></a>
             </div>
           </main>
           </div>
         </div>
-        <!-- <div class="footer">
-    <aside>
-        <ol>
-                <li>
-                    <a href="/blog/tv-kit">TVKit - A TV Prototyping Toolkit</a>
-                        <span>
-                            Jun  3
-                        </span>
-                </li>
-                <li>
-                    <a href="/blog/alpha-channel-experiment">Another Alpha Channel Experiment</a>
-                        <span>
-                            Sep 27
-                        </span>
-                </li>
-                <li>
-                    <a href="/blog/open-frameworks-and-processing">Trying Some Libraries</a>
-                        <span>
-                            Aug  7
-                        </span>
-                </li>
-                <li>
-                    <a href="/blog/tv-and-framer">TV & Framer</a>
-                        <span>
-                            Apr 22
-                        </span>
-                </li>
-        </ol>
-
-        <h2>Tags</h2>
-        <ol>
-                <li>
-                    <a href="/blog/tags/framer">framer (2)</a>
-                </li>
-                <li>
-                    <a href="/blog/tags/prototyping">prototyping (1)</a>
-                </li>
-                <li>
-                    <a href="/blog/tags/toolkit">toolkit (1)</a>
-                </li>
-                <li>
-                    <a href="/blog/tags/patterns">patterns (1)</a>
-                </li>
-                <li>
-                    <a href="/blog/tags/creative-code">creative-code (2)</a>
-                </li>
-                <li>
-                    <a href="/blog/tags/open-frameworks">open-frameworks (2)</a>
-                </li>
-                <li>
-                    <a href="/blog/tags/processing">processing (1)</a>
-                </li>
-                <li>
-                    <a href="/blog/tags/p5js">p5js (1)</a>
-                </li>
-                <li>
-                    <a href="/blog/tags/trying-libraries">trying-libraries (1)</a>
-                </li>
-                <li>
-                    <a href="/blog/tags/portfolio">portfolio (1)</a>
-                </li>
-                <li>
-                    <a href="/blog/tags/frameworks">frameworks (1)</a>
-                </li>
-        </ol>
-
-        <h2>By Year</h2>
-        <ol>
-                <li>
-                    <a href="/blog/2019">2019 (1)</a>
-                </li>
-                <li>
-                    <a href="/blog/2018">2018 (3)</a>
-                </li>
-        </ol>
-    </aside>
-</div> -->
     </body>
 
 </html>
